@@ -196,37 +196,106 @@ print(division)  // se evalua
 
 #### Clase 19. Condicionales `if`
  
--
+- if si una condición es verdadera
+- else si la condición no es verdadera
+- Se puede utilizar como una expresión 
 
+```scala
 
+val edad = if (x > 10) "m" else "n"
+
+```
 #### Clase 20. Bucles
  
--
+- while mientras se cumpla la condición
+- for tiene distintas variaciones
 
 #### Clase 21. Rangos
  
--
+- 1 to 10 llega hasta el 10
+- 1 until 10 llega hasta el 9
+
 
 #### Clase 22. Iniciar variables por defecto
  
--
+- Se utiliza un valor predefinido con `_`
+- Tiene que ser un `var`
+
+```scala
+
+var gg: Int =_
+```
 
 #### Clase 23. Pattern matching #1
  
--
+  Se utiliza match y `case`
 
 #### Clase 24. Pattern matching #2
  
--
+- `CASE _ =>` es el default
+- Se pueden usar condicionales
 
 #### Clase 25. Strings
  
--
+- `.last` ultimo carácter
+- `.head` primer carácter
+- `.foreach` por cada carácter
 
 #### Clase 26. String Interpolation
  
--
+- Se interpola con "s" antes de la cadena
+- `s"Cadena $variable"`
+
+```scala
+
+val nombre = "Juan"
+
+println(s"Te llamas $nombre")
+
+```
 
 #### Clase 27. Números
  
+- Int.MinValue Int.MaxValue
+- .
+
+--- 
+
+### Sección 4: Colecciones
+
+#### CLase 28. Intro
+
 -
+
+#### CLase 29. List
+
+-
+
+#### CLase 30. Operaciones con List
+
+-
+
+#### CLase 31. Operaciones con List #2
+
+-
+
+#### CLase 32. ListBuffer
+
+-
+
+#### CLase 33. Array
+
+-
+
+#### CLase 34. ArrayBuffer
+
+-
+
+#### CLase 35. Set
+
+-
+
+#### CLase 36. Map
+
+-
+
