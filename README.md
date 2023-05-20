@@ -257,7 +257,7 @@ println(s"Te llamas $nombre")
 #### Clase 27. Números
  
 - Int.MinValue Int.MaxValue
-- .
+
 
 --- 
 
@@ -265,7 +265,36 @@ println(s"Te llamas $nombre")
 
 #### CLase 28. Intro
 
--
+- Un trait es el equivalente de un interface en java
+- Traversable: interfaz primaria con métodos como foreach
+- Iterable: define un iterator que permite recorrer la colección
+
+```mermaid
+
+flowchart TB
+  Traversable --> Iterable
+  Iterable --> Seq
+  Iterable --> Set
+  Iterable --> Map
+  Seq --> LinearSeq
+  Seq --> Buffer
+  Seq --> IndexedSeq
+  IndexedSeq --> String
+  IndexedSeq --> StringBuilder
+  IndexedSeq --> Array
+  IndexedSeq --> Range
+  IndexedSeq --> Vector
+  Buffer --> ArrayBuffer
+  Buffer --> ListBuffer
+  LinearSeq --> List
+  LinearSeq --> LinkedList
+  LinearSeq --> MutableList
+  LinearSeq --> Queue
+  LinearSeq --> Stack
+  LinearSeq --> Stream
+
+
+  ```
 
 #### CLase 29. List
 
