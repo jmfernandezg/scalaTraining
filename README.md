@@ -268,6 +268,12 @@ println(s"Te llamas $nombre")
 - Un trait es el equivalente de un interface en java
 - Traversable: interfaz primaria con métodos como foreach
 - Iterable: define un iterator que permite recorrer la colección
+- Seq se divide en IndexedSeq, LinearSeq y Buffer
+  - IndexedSeq: Vector
+  - LinearSeq: List 
+- Map es una colección llave valor
+  - Cada llave es única
+- Una colección de elementos sin duplicados
 
 ```mermaid
 
@@ -279,6 +285,17 @@ flowchart TB
   Seq --> LinearSeq
   Seq --> Buffer
   Seq --> IndexedSeq
+  Map --> HashMap
+  Map --> SortedMap
+  Map --> WeakHashMap
+  Map --> TreeMap
+  Map --> LinkedHashMap
+  Set --> BitSet
+  Set --> ListSet
+  Set --> HashSet
+  Set --> SortedSet
+  SortedSet --> TreeSet
+  subgraph Seq
   IndexedSeq --> String
   IndexedSeq --> StringBuilder
   IndexedSeq --> Array
@@ -292,39 +309,90 @@ flowchart TB
   LinearSeq --> Queue
   LinearSeq --> Stack
   LinearSeq --> Stream
-
+  end
 
   ```
 
 #### CLase 29. List
 
--
+- Están en el paquete `scala.collection.immutable`
+- Se puede referenciar por indice con paréntesis ()
 
 #### CLase 30. Operaciones con List
 
--
+- Lista vacía `List()`
+- `isEmpty` revisa si esta vacía
+- `List.fill(5)("x")`  crea una lista y la llena
 
 #### CLase 31. Operaciones con List #2
 
--
+- `:+` pone un elemento al final
+- `+:` pone un elemento al inicio
+- `::` une dos listas y pone la lista como un elemento de la lista de destino
+- `:::` une dos listas
 
 #### CLase 32. ListBuffer
 
--
+- Es una lista mutable
+- `import scala.collection.mutable.ListBuffer`
+- `append` añade un elemento a la lista
+- `-=` remueve un elemento de la lista
+
 
 #### CLase 33. Array
 
--
+- El tamaño se define al momento de la creación
+- Array.copy copia los arrays
+- Array.concat concatena los arrays
 
 #### CLase 34. ArrayBuffer
 
--
+- Son Arrays mutables
+- Es posible ampliarlo y modificarlo con append y +=
+-  ++= puede agregar varios elementos
 
 #### CLase 35. Set
 
--
+- Es una colección de valores que no se repiten
 
 #### CLase 36. Map
 
--
+- Es una colección de elementos llave valor
+- Se asocia una llave a un valor con `->`
 
+
+--- 
+
+### Sección 5: Funciones y Métodos
+
+#### Clase 37: Funciones 
+
+- Se definen con `def`
+- No hace falta un `return`
+- Si no llevan parámetros se pueden definir sin paréntesis
+
+### Clase 38: Procedimientos 
+
+- El tipo de retorno `Unit` no devuelve nada
+
+### Clase 39: Funciones con parámetros
+
+- Se definen con el nombre del argumento ":" y su tipo
+- `def fun(f: Int)`
+
+### Clase 40: Parámetros con nombre
+
+- Los parámetros se pueden invocar por su nombre
+- `fun (f = 3)`
+
+### Clase 41: Parámetros por defecto
+
+- En la declaración de la función es posible declarar un valor por defecto
+- `def fun(f: Int=1)`
+
+### Clase 42: Numero variable de parámetros
+
+- Numero de argumentos variables
+- Se declaran con el tipo de la variable con un asterisco
+- `def fun(f: Int*)`
+- 
