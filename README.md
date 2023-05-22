@@ -26,7 +26,7 @@ https://udemy.com/course/scala-desde-cero/learn/lecture/21473418#questions
 - Orientado a objetos
 - Utiliza clases y traits
     - traits son interfaces
-- Esta orientado a la programación funcional
+- Está orientado a la programación funcional
     - las funciones son fist class values
 - Puede ejecutar cualquier librería de java
 
@@ -151,7 +151,7 @@ flowchart TB
 ```scala
 lazy val division  = 1 / 0
 
-print(division)  // se evalua
+print(division)  
 
 ```
 
@@ -168,7 +168,7 @@ print(division)  // se evalua
 
 #### Clase 16. Comentarios
  
-- Doble Barra `//` comentario de una sola linea
+- Doble Barra `//` comentario de una sola línea
 - Barra asterisco `/* */` comentario multi linea
 - Comentario de documentación: un asterisco en cada línea
 
@@ -189,7 +189,7 @@ print(division)  // se evalua
   - Un solo igual `=` es asignación
   - Dos iguales `==` es igualdad
   - `>, <, =>, <=`
-- Logicos
+- Lógicos
   - `&&` and
   - `||` or
   - `!` not
@@ -316,7 +316,7 @@ flowchart TB
 #### CLase 29. List
 
 - Están en el paquete `scala.collection.immutable`
-- Se puede referenciar por indice con paréntesis ()
+- Se puede referenciar por índice con paréntesis ()
 
 #### CLase 30. Operaciones con List
 
@@ -363,7 +363,7 @@ flowchart TB
 
 --- 
 
-### Sección 5: Funciones y Métodos
+### Funciones y Métodos
 
 #### Clase 37: Funciones 
 
@@ -371,28 +371,92 @@ flowchart TB
 - No hace falta un `return`
 - Si no llevan parámetros se pueden definir sin paréntesis
 
-### Clase 38: Procedimientos 
+#### Clase 38: Procedimientos
 
 - El tipo de retorno `Unit` no devuelve nada
 
-### Clase 39: Funciones con parámetros
+#### Clase 39: Funciones con parámetros
 
-- Se definen con el nombre del argumento ":" y su tipo
+- Se definen con el nombre del argumento, `:` y su tipo
 - `def fun(f: Int)`
 
-### Clase 40: Parámetros con nombre
+#### Clase 40: Parámetros con nombre
 
 - Los parámetros se pueden invocar por su nombre
 - `fun (f = 3)`
 
-### Clase 41: Parámetros por defecto
+#### Clase 41: Parámetros por defecto
 
 - En la declaración de la función es posible declarar un valor por defecto
 - `def fun(f: Int=1)`
 
-### Clase 42: Numero variable de parámetros
+#### Clase 42: Número variable de parámetros
 
-- Numero de argumentos variables
+- Número de argumentos variables
 - Se declaran con el tipo de la variable con un asterisco
 - `def fun(f: Int*)`
-- 
+
+---
+
+### Clases y Objetos
+
+#### Clase 47: Objetos
+
+- Los objetos se declaran con `object`
+- Las clases se declaran con `class`
+
+#### Clase 49: Herencia
+
+- Se declara igual que java con `extends`
+
+#### Clase 50: Traits
+
+- Se comportan como las interfaces de java
+- Pueden albergar campos y métodos no abstractos
+- Se declara igual con `extends`
+
+#### Clase 52: Traits Multiple
+
+- Se declaran con `with`
+
+#### Clase 53: Modificadores de acceso
+
+- Si no hay declaración entonces es pública
+- Los `private` y `protected` funcionan igual que en Java
+
+#### Clase 54: Constructores
+
+- El constructor principal se declara entre paréntesis en la declaración de la clase
+
+#### Clase 55: Constructores auxiliares
+
+- Se declaran con `def this`
+
+#### Clase 56: Constructores multiples
+
+- Se declaran con `def this`
+
+#### Clase 57: Singleton
+
+- Scala no tiene el keyword `static`
+- Se declara como `object`
+
+#### Clase 58: Companion
+
+- Se hace con `object Companion` asociado en la clase
+- Se tiene que llamar de la misma forma que la clase
+
+#### Clase 59: Crear clases sin new
+
+- Se utilizan los Companion Objects con el método `apply() : T`
+- El método `apply` tiene que devolver un objeto de la clase
+
+#### Clase 60: Case class
+
+- Crea automáticamente un object companion
+- Va a implementar toString, hashcode, equals, copy
+
+#### CLase 61: Clases abstractas
+
+- Parecidas a las de java
+- Admite argumentos, a diferencia de un trait
