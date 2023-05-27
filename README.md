@@ -507,13 +507,21 @@ flowchart TB
 ### Otras características
 
 #### CLase 70. Options
+- Método find de las listas
+- `Some` si se encontré, `None` si no
+- Se recupera con  `get` o con `getOrElse`
 
 #### CLase 71. Exceptions Try Catch
+- Throwable cacha cualquier tipo de excepción
+
 
 #### CLase 72. Exceptions finally
+- finally siempre se ejecuta
 
 #### CLase 73. Exceptions Throw
+- Se lanza con throw new exception
 
+ 
 #### CLase 74. Sobrecarga
 
 
@@ -523,8 +531,12 @@ flowchart TB
 ### Ficheros
 
 #### Clase 75. Leer archivos
+- Con Source.fromFile
+- Lineas con Source.fromFile().getLines.toList
+
 
 #### Clase 76. Escribir archivos
+- Con PrintWritter o BufferWritter
 
 #### Clase 77. Escribir archivos binarios
 
