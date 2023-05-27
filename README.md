@@ -460,3 +460,71 @@ flowchart TB
 
 - Parecidas a las de java
 - Admite argumentos, a diferencia de un trait
+
+---
+
+### Programación funcional
+
+#### Clase 62: High Order Functions
+
+- Una función de orden superior devuelve una función o tiene otras funciones como parámetros
+- En scala son valores de primera clase, se pueden pasar como parámetro o se pueden devolver como salida
+
+#### Clase 63: Funciones anónimas, functions literals
+
+- Función sin nombre dentro de un codigo más complejo
+
+#### Clase 64: Funciones como parámetros
+
+- Se puede pasar funciones como argumentos
+
+#### Clase 65: Funciones como variables
+
+- Las funciones se pueden definir con `val`
+
+#### Clase 66: Devolver una función
+
+- Las funciones pueden regresar una función
+
+#### Clase 67: Party applied functions
+
+- Pasa algunos argumentos, pero no todos
+- El argumento faltante se declara con un guión `_: Int`
+
+#### Clase 68: Currying
+
+- Transforma una función con múltiples argumentos en una función que toma un argumento simple
+- `(Int, Int) => Int` se transforma en `Int => Int => Int`
+
+#### Clase 69: Closures
+
+- Función que utiliza variables fuera de la función
+- Se puede utilizar de forma interactiva
+
+--- 
+
+
+### Otras características
+
+#### CLase 70. Options
+
+#### CLase 71. Exceptions Try Catch
+
+#### CLase 72. Exceptions finally
+
+#### CLase 73. Exceptions Throw
+
+#### CLase 74. Sobrecarga
+
+
+--- 
+
+
+### Ficheros
+
+#### Clase 75. Leer archivos
+
+#### Clase 76. Escribir archivos
+
+#### Clase 77. Escribir archivos binarios
+
